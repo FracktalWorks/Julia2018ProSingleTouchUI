@@ -73,13 +73,13 @@ class Julia2018ProSingleTouchUI(octoprint.plugin.StartupPlugin):
 		)
 
 
-__plugin_name__ = "Julia2018ExtendedTouchUI"
-__plugin_version__ = "1.0.13"
+__plugin_name__ = "Julia2018ProSingleTouchUI"
+__plugin_version__ = "0.0.1"
 
 
 def __plugin_load__():
 	global __plugin_implementation__
-	__plugin_implementation__ = Julia2018ExtendedTouchUI()
+	__plugin_implementation__ = Julia2018ProSingleTouchUI()
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {

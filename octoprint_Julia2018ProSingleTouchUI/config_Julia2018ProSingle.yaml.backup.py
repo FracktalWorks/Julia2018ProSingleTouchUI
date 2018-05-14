@@ -2,7 +2,7 @@ api:
   enabled: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Fracktal Works Julia 2018 Extended
+  name: Fracktal Works Julia 2018 Pro Single
 devel:
   cache:
     enabled: true
@@ -23,7 +23,7 @@ devel:
       x: 6000
       y: 6000
       z: 200
-    numExtruders: 2
+    numExtruders: 1
     okAfterResend: false
     okWithLinenumber: false
     repetierStyleResends: false
@@ -87,14 +87,14 @@ printerProfiles:
     heatedBed: true
     id: _default
     model: Generic RepRap Printer
-    name: Julia 2018 Extended
+    name: Julia 2018 Pro Single
     volume:
       custom_box: false
-      depth: 250.0
+      depth: 400.0
       formFactor: rectangular
-      height: 250.0
+      height: 400.0
       origin: lowerleft
-      width: 300.0
+      width: 400.0
 serial:
   autoconnect: true
   baudrate: 115200
