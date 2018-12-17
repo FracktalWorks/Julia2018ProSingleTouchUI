@@ -2,7 +2,7 @@ api:
   enabled: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Fracktal Works Julia 2018 Pro Single
+  name: Fracktal Works Julia Pro Single
 devel:
   cache:
     enabled: true
@@ -60,12 +60,8 @@ plugins:
     avrdude_programmer: wiring
     check_after_connect: false
     flash_method: avrdude
-  softwareupdate:
-    _config_version: 6
-    check_providers:
-      Julia2018ExtendedTouchUI: Julia2018ExtendedTouchUI
-      firmwareupdater: firmwareupdater
 printerProfiles:
+  default: _default
   defaultProfile:
     axes:
       e:
@@ -84,15 +80,19 @@ printerProfiles:
     extruder:
       count: 1
       nozzleDiameter: 0.4
+      offsets:
+      - - 0.0
+        - 0.0
+      sharedNozzle: false
     heatedBed: true
     id: _default
-    model: Generic RepRap Printer
-    name: Julia 2018 Pro Single
+    model: Fracktal Works Julia Pro
+    name: Julia Pro Single
     volume:
       custom_box: false
-      depth: 400.0
+      depth: 395.0
       formFactor: rectangular
-      height: 400.0
+      height: 405.0
       origin: lowerleft
       width: 400.0
 serial:
