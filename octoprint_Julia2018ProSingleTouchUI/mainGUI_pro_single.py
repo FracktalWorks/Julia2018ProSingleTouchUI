@@ -2996,7 +2996,7 @@ class Ui_MainWindow(object):
         self.quickStep3NextButton.setIconSize(QtCore.QSize(40, 40))
         self.quickStep3NextButton.setObjectName(_fromUtf8("quickStep3NextButton"))
         self.calibrateLabel_10 = QtGui.QLabel(self.quickStep3Page)
-        self.calibrateLabel_10.setGeometry(QtCore.QRect(10, 20, 471, 51))
+        self.calibrateLabel_10.setGeometry(QtCore.QRect(10, 20, 461, 51))
         font = QtGui.QFont()
         font.setFamily(_fromUtf8("Gotham"))
         font.setPointSize(14)
@@ -4649,8 +4649,6 @@ class Ui_MainWindow(object):
         font.setFamily(_fromUtf8("Gotham"))
         font.setPointSize(24)
         self.feedRateSpinBox.setFont(font)
-        self.feedRateSpinBox.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
-        self.feedRateSpinBox.setAutoFillBackground(False)
         self.feedRateSpinBox.setStyleSheet(_fromUtf8("QSpinBox {\n"
 "    padding-right: 5px; /* make room for the arrows */\n"
 "    color: rgb(255, 255, 255);\n"
@@ -4853,7 +4851,6 @@ class Ui_MainWindow(object):
         font.setFamily(_fromUtf8("Gotham"))
         font.setPointSize(20)
         self.toolTempSpinBox.setFont(font)
-        self.toolTempSpinBox.setAutoFillBackground(False)
         self.toolTempSpinBox.setStyleSheet(_fromUtf8("QSpinBox {\n"
 "    padding-right: 5px; /* make room for the arrows */\n"
 "    color: rgb(255, 255, 255);\n"
@@ -4913,7 +4910,6 @@ class Ui_MainWindow(object):
         self.toolTempSpinBox.setReadOnly(False)
         self.toolTempSpinBox.setButtonSymbols(QtGui.QAbstractSpinBox.UpDownArrows)
         self.toolTempSpinBox.setAccelerated(True)
-        self.toolTempSpinBox.setKeyboardTracking(False)
         self.toolTempSpinBox.setMaximum(300)
         self.toolTempSpinBox.setSingleStep(1)
         self.toolTempSpinBox.setProperty("value", 0)
@@ -6425,7 +6421,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.mainApplication)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(10)
+        self.stackedWidget.setCurrentIndex(7)
         self.controlTabWidget.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -6473,7 +6469,7 @@ class Ui_MainWindow(object):
         self.ethStaticGatewayLabel.setText(_translate("MainWindow", "Gateway", None))
         self.ethStaticGatewayKeyboardButton.setText(_translate("MainWindow", "...", None))
         self.ethStaticIpKeyboardButton.setText(_translate("MainWindow", "...", None))
-        self.networkInfoButton.setText(_translate("MainWindow", "Network info", None))
+        self.networkInfoButton.setText(_translate("MainWindow", "Network Info", None))
         self.configureWifiButton.setText(_translate("MainWindow", "Configure WiFi", None))
         self.configureEthButton.setText(_translate("MainWindow", "Configure Ethernet", None))
         self.calibrateTouch.setText(_translate("MainWindow", "Calibrate Touch", None))

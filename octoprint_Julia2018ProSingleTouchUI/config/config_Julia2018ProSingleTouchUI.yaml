@@ -2,7 +2,7 @@ api:
   enabled: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Fracktal Works Julia Pro Single
+  name: Julia Pro Single
 devel:
   cache:
     enabled: true
@@ -44,7 +44,7 @@ pluginmanager:
   repository: http://plugins.octoprint.org/plugins.json
 plugins:
   _disabled:
-  - cura
+    - cura
   announcements:
     _blog: null
     _important: null
@@ -80,13 +80,10 @@ printerProfiles:
     extruder:
       count: 1
       nozzleDiameter: 0.4
-      offsets:
-      - - 0.0
-        - 0.0
       sharedNozzle: false
     heatedBed: true
     id: _default
-    model: Fracktal Works Julia Pro
+    model: Fracktal Works Julia Pro Series
     name: Julia Pro Single
     volume:
       custom_box: false
@@ -125,5 +122,5 @@ system:
     name: Stop video stream
 webcam:
   ffmpeg: /usr/bin/avconv
-  snapshot: ''
-  stream: ''
+  snapshot: http://127.0.0.1:8080/?action=snapshot
+  stream: /webcam/?action=stream

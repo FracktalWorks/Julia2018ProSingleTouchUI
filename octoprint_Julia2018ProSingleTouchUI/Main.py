@@ -1669,14 +1669,19 @@ class QtWebsocket(QtCore.QThread):
             else:
                 self.emit(QtCore.SIGNAL('PRINT_STATUS'), None)
 
+            def temp(data, tool, temp):
+                try:
+                    return data["current"]["temps"][0][tool][temp]
+                except:
+                    return 0
+
             if data["current"]["temps"] and len(data["current"]["temps"]) > 0:
                 try:
-                    if "tool0" in data["current"]["temps"][0]:
-                        temperatures = {'tool0Actual': data["current"]["temps"][0]["tool0"]["actual"],
-                                        'tool0Target': data["current"]["temps"][0]["tool0"]["target"],
-                                        'bedActual': data["current"]["temps"][0]["bed"]["actual"],
-                                        'bedTarget': data["current"]["temps"][0]["bed"]["target"]}
-                        self.emit(QtCore.SIGNAL('TEMPERATURES'), temperatures)
+                    temperatures = {'tool0Actual': temp(data, "tool0", "actual"),
+                                    'tool0Target': temp(data, "tool0", "target"),
+                                    'bedActual': temp(data, "bed", "actual"),
+                                    'bedTarget': temp(data, "bed", "target")}
+                    self.emit(QtCore.SIGNAL('TEMPERATURES'), temperatures)
                 except KeyError:
                     # temperatures = {'tool0Actual': data["current"]["temps"][0]["tool0"]["actual"],
                     #                 'tool0Target': data["current"]["temps"][0]["tool0"]["target"],
