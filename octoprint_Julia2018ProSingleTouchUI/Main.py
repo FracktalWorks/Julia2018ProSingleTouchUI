@@ -1714,7 +1714,7 @@ class ThreadSanityCheck(QtCore.QThread):
         while (True):
             # Start an object instance of octopiAPI
             try:
-                if (uptime > 30):
+                if (uptime > 90):
                     shutdown_flag = True
                     self.emit(QtCore.SIGNAL('STARTUP_ERROR'))
                     break
