@@ -558,6 +558,7 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single.Ui_MainWindow):
             else:
                 self.firmwareUpdateCheck()
         except:
+            print "error on Server Connected"
             pass
 
     ''' +++++++++++++++++++++++++Filament Sensor++++++++++++++++++++++++++++++++++++++ '''
