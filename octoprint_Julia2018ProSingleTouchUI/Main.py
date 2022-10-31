@@ -101,9 +101,9 @@ filaments = [
                 ("Breakaway", 240)
 ]
 
-calibrationPosition = {'X1': 360, 'Y1': 42,     # right
-                       'X2': 50, 'Y2': 42,      # left
-                       'X3': 205, 'Y3': 352     # back
+calibrationPosition = {'X1': 371, 'Y1': 42,     # right
+                       'X2': 63, 'Y2': 42,      # left
+                       'X3': 216, 'Y3': 352     # back
                        }
 
 try:
